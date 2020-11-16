@@ -1,0 +1,221 @@
+/*==============================================
+    Authour: Stephen Sheppard
+================================================*/
+body{
+    background-color:rgb(20, 20, 163);
+}
+
+/*----------------------------------------------------------------------------------------------------------------
+               LOGO STYLE
+-----------------------------------------------------------------------------------------------------------------*/
+.flogo {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*----------------------------------------------------------------------------------------------------------------
+                NAVBAR STYLE
+-----------------------------------------------------------------------------------------------------------------*/
+/* Navbar */
+.Navbar {
+	overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
+	background-color: #050044; /* This colors the navbar black */
+    position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
+    top: 0; /* This ensures no space is displayed above the navbar */
+    left: 0;  /* This ensures no space is displayed above the navbar */
+	width: 100%; /* This makes the navbar span the entire width of the page */
+	z-index: 1; /*This ensures other elements don't display over the navbar */
+    padding-bottom: 10px;
+    padding-left: 30%;
+}
+
+/* Navbar text */
+.Navbar a {
+	float: left; /* This specifies that the text floats on the left on the navbar */
+	display: block; /* This ensures that other text will be displayed on the same line or row, instead of a new line */
+	color: white; /* This is the font color for text on our navbar */
+	padding: 14px 25px; /* This adds padding around our text */
+	text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
+	font-family: Avant Garde, Helvetica; /* This specifies the font family for text on our navbar */
+	font-size: 20px; /* This specifies the font size for text on our navbar */
+	text-align: center; /* This centers the text within its container */
+}
+
+/* Navbar hover effect */
+.Navbar a:hover {
+	background-color: #F4F4F4; /*  This defines the background color that will display when you hover over the text on the navbar */
+	color: black; /* This defines the font color that will display when you hover over the text on the navbar */
+	font-weight: bold; /* This makes the text on the navbar bold when hovered over */
+}
+
+/* Navbar home button */
+.Navbar a.active { /* The active selector styles a link */
+  background-color: darkgray;  /* This specifies the background color behind the Home button on the navbar */ 
+}
+
+/*----------------------------------------------------------------------------------------------------------------
+                DESCRIPTION STYLE
+-----------------------------------------------------------------------------------------------------------------*/
+.Column_1 {         /* Column on the right*/
+	float: left;  
+	width: 50%; /* This ensures one column takes up half the page width */
+	margin-top: 8%; /* This ensures there is space between the top of the column and our headings */
+	height: 351px; /* This sets the height of our column at 400 pixels - if you change the text within the columns, you will need to adjust the column heights accordingly */
+    background-color: #bbd2e7; 
+    margin-bottom: 2%;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: sans-serif;
+    padding-left: 5%;
+}
+
+.Column_2 {         /* Column on the left containg video*/
+	float: left;
+    width: 50%;
+    margin-top: 8%;
+    margin-bottom: 2%;
+}
+
+#vid {         /* Column on the left containing video*/
+    width: 100%;
+}
+.Row:after { /* This inserts something after the content of selected elements */
+	content: ""; /* By leaving this blank, we are allowing the footer (covered lower down) to be displayed - removing it makes the footer overwrite a column */
+	display: table; /* The display property specifies the type of display behavior; the table value tells the browser to treat the element as a table */
+	clear: both; /* This clears any other elements from floating on the left or the right of an element */
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------
+                GALLERY STYLE
+-----------------------------------------------------------------------------------------------------------------*/
+h2 {
+    text-align: center; /* Centre's the heading Gallery*/
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.container{
+    width: 100%;
+    background-color: #bbd2e7;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+
+.gallery-container{ 
+    padding-left: 130px; /*Padding used to move images to center from left of screen*/
+  }
+
+* {
+    box-sizing: border-box;
+  }
+.Kuga {
+    display: inline;
+    margin-left: 10px;
+    padding-left: 5px;
+    width: 150px;
+}
+
+.Kuga:hover {
+    transition: transform 1s;
+    transform: scale(2.1);
+}
+
+/*----------------------------------------------------------------------------------------------------------------
+                QUERIES STYLE
+-----------------------------------------------------------------------------------------------------------------*/
+.form-container {
+    margin-left: 30%;
+    padding-top: 3px;
+    margin-top: 2%;
+    width: 40%;
+    height: 520px;
+    font-family: "Trebuchet MS", Optima;
+    background-color: #bbd2e7;
+    border-radius: 20px;
+    
+}
+form {
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    font-family: "Trebuchet MS", Optima;
+    width: 50%;
+    height: 400px;
+    margin-left: 25%;
+
+
+}
+
+/* Contact form */
+input[type=text] { /* This covers the input sections of the contact form */
+	width: 60%;
+	padding: 12px;
+    border: 1px solid #ccc; /* We are setting a solid border and its colors */
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    resize: vertical; /* This specifies how an element is resized; vertical allows the user to resize the height of the element */
+    font-family: Perpetua, Rockwell Extra Bold; 
+}
+
+/* Submit button */
+input[type=submit] { /* This covers the submit button for the contact form */
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	display: block;
+	margin-left: 30%;; 
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+/* Hover effect for submit button */
+input[type=submit]:hover {
+	background-color: rgb(26, 208, 214); /* Makes the background turn white when hovered over */
+	color: black; /* Makes the font turn black when hovered over */
+	font-weight: bold; /* Makes the font bold when hovered over */
+	transform: scale(1.5); /* Makes the button increase 1.5 times in size */ 
+	transition: transform 1.5s; /* Makes the transform effect last 1.5 seconds from start to finish */
+}
+
+.pform{
+    font-size: 14px;
+    padding-left: 40px;
+}
+.formheading{
+    padding-left: 25%;
+    margin-top: 20px;
+}
+.form-spacer{
+    font-size: 10px;
+    margin-left: 5px;
+    padding: 10px;
+}
+
+.terms {
+    font-size: 10px;
+    margin-left: 20%;
+    padding: 5px;
+    color: mediumblue;
+}
+
+/*----------------------------------------------------------------------------------------------------------------
+                FOOTER STYLE
+-----------------------------------------------------------------------------------------------------------------*/
+
+.footer {
+    padding-left: 40%;
+    background-color: black;
+    color: mintcream;
+    width: 100%;
+    
+}
